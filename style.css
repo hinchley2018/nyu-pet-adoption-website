@@ -1,0 +1,14 @@
+
+/* style by tag */
+ol {
+    color: pink
+}
+/* .pet-row class */
+.pet-row {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* style by id */
+#selected-pet{
+    background-color: yellow;
+    font-style: italic;
+}

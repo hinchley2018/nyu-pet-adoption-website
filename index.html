@@ -5,12 +5,44 @@
 
 <head>
     <title>NYU Pet Adoption</title>
+    <!-- loading styles from a separate stylesheet, good as site grows -->
+    <!-- The order you load applys that -->
+    <link rel="stylesheet" href="./nav-menu.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <!-- internal styling for quick / small styling or override a styling sheet-->
+    <style type="text/css">
+        /* body tag selector search for body tag */
+        body{
+            /* A style rule/declaration is one line */
+            /* property of the rule: value of the rule */ 
+            background-color: blue; 
+        }
+        h1{
+            color: yellow
+        }
+        div{
+            background-color: green;
+        }
+        h2{
+            color: red;
+            font-size: 50px;
+            /* a more complex style */
+            border: 5px solid black;
+            /* The equivalent but often not used */
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+        }
+        h3{
+            color:purple;
+        }
+    </style>
 </head>
 <!-- Visible stuff -->
 
 <body>
     <!-- Nav section -->
-    <div>
+    <div class="nav-menu">
         <img src="./images/hamburger-menu.jpg" alt="hamburger menu icon" />
         <ul>
             <li>
@@ -46,12 +78,12 @@
     <!-- pet info -->
     <div>
         <ul>
-            <li>
+            <li class="pet-row" id="selected-pet">
                 <p>Maddie - German Shepard 123-456-7890</p>
 
             </li>
-            <li>Lizzie - German Shepard 123-456-7890</li>
-            <li>Ruff - Golden Retriever 123-456-7890</li>
+            <li class="pet-row">Lizzie - German Shepard 123-456-7890</li>
+            <li class="pet-row">Ruff - Golden Retriever 123-456-7890</li>
         </ul>
         <img src="https://placekitten.com/200/200" alt="A picture of maddie from internet" />
         <img src="./images/kitten.jpg" alt="A picture of maddie from local server" />
